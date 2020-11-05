@@ -1,0 +1,51 @@
+@use '../../styles/variables' as v;
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  .hw-button-handle-form {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: v.$ternary;
+    border: 3px solid v.$secondary;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 60%;
+      height: 5px;
+      border-radius: 3px;
+      background-color: v.$secondary;
+      
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      content: '';
+      width: 60%;
+      height: 5px;
+      border-radius: 3px;
+      background-color: v.$secondary;
+      
+    }
+
+  }
+}

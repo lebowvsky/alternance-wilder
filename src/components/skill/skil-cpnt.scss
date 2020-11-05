@@ -1,0 +1,24 @@
+@use '../../styles/variables' as v;
+
+.skill-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  .sl-title {
+    font-size: 0.8rem;
+    color: v.$secondary;
+  }
+
+  .sl-vote {
+    width: 10px;
+    height: 10px;
+    font-size: 0.8rem;
+    background-color: v.$ternary;
+    padding: 2px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    border-radius: 50%;
+  }
+}

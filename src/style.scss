@@ -1,0 +1,22 @@
+@use './styles/variables' as v;
+@forward './styles/variables';
+
+// Containers
+@use './containers/header/header-container.scss';
+@use './containers/wilder-container/wilders-container.scss';
+
+// Cpnt
+@use './components/wilder/wilder-cpnt.scss';
+@use './components/skill/skil-cpnt.scss';
+@use './components/wilder-form/wilder-form-cpnt.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: v.$primary;
+  color: rgb(39, 39, 39);
+  font-family: sans-serif;
+}
